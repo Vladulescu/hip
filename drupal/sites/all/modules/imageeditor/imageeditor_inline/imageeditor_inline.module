@@ -143,7 +143,6 @@ function imageeditor_inline_page_build(&$page) {
     drupal_add_js(array('imageeditor_inline' => $conf_array), 'setting');
     $path = drupal_get_path('module', 'imageeditor_inline');
     drupal_add_js($path . '/js/imageeditor_inline.js', array('scope' => 'footer', 'weight' => 10));
-    drupal_add_css($path . '/css/imageeditor_inline.css');
   }
 }
 

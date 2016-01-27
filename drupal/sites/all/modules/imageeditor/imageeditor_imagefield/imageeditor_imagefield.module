@@ -83,7 +83,11 @@ function imageeditor_imagefield_element_process($element) {
   }
 
   // Field item specific settings.
-  $conf_array[$element['#field_name']]['items'][] = $element['#id'];
+  $conf_array[$element['#field_name']]['items'][] = array(
+    'element_id' => $element['#id'],
+    'element_id_pattern' => preg_replace('/-upload$/', '', $element['#id']),
+    'remove_button_id' => $element['remove_button']['#id'],
+  );
 
   if (!$conf_added['imageeditor_imagefield']) {
     $conf_added['imageeditor_imagefield'] = TRUE;

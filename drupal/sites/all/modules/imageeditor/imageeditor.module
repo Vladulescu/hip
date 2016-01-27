@@ -176,14 +176,14 @@ function imageeditor_theme($existing, $type, $theme, $path) {
  * Theme function to output Image Editor widget item.
  */
 function theme_imageeditor_widget_item($variables) {
-  return '<div class="imageeditor-widget-item ' . $variables['class'] . '" title="' . $variables['name'] . '" data-codename="' . $variables['codename'] . '"></div>';
+  return '<span class="imageeditor-widget-item ' . $variables['class'] . '" title="' . $variables['name'] . '" data-codename="' . $variables['codename'] . '"></span>';
 }
 
 /**
  * Theme function to output Image Editor widget item.
  */
 function theme_imageeditor_admin_item($variables) {
-  return '<div class="imageeditor-admin-item ' . $variables['class'] . '" title="' . $variables['name'] . '" data-codename="' . $variables['codename'] . '"></div>';
+  return '<span class="imageeditor-admin-item ' . $variables['class'] . '" title="' . $variables['name'] . '" data-codename="' . $variables['codename'] . '"></span>';
 }
 
 /**

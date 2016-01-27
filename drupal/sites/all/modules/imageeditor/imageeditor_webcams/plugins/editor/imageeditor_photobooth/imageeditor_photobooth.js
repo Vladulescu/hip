@@ -5,7 +5,7 @@
 
   Drupal.imageeditor.editors.imageeditor_photobooth = Drupal.imageeditor.editors.imageeditor_photobooth || {};
   Drupal.imageeditor.editors.imageeditor_photobooth.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.imageeditor-photobooth').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.imageeditor-photobooth').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();

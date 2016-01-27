@@ -5,7 +5,7 @@
 
   Drupal.imageeditor.editors.deviantartmuro = Drupal.imageeditor.editors.deviantartmuro || {};
   Drupal.imageeditor.editors.deviantartmuro.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.deviantartmuro').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.deviantartmuro').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();

@@ -29,7 +29,7 @@
 
   Drupal.imageeditor.editors.aviary_feather = Drupal.imageeditor.editors.aviary_feather || {};
   Drupal.imageeditor.editors.aviary_feather.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.aviary-feather').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.aviary-feather').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();

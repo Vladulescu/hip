@@ -44,13 +44,13 @@
         editors_html += Drupal.settings.imageeditor[value[0]].html;
       }
     });
-    editors_html = editors_html ? '<div class="editors">' + editors_html + '</div>' : '';
+    editors_html = editors_html ? '<span class="editors">' + editors_html + '</span>' : '';
 
     if (typeof(options.image) !== 'undefined') {
       $.each(uploaders_sort, function(index, value) {
         uploaders_html += Drupal.settings.imageeditor[value[0]].html;
       });
-      uploaders_html = uploaders_html ? '<div class="uploaders">' + uploaders_html + '</div>' : '';
+      uploaders_html = uploaders_html ? '<span class="uploaders">' + uploaders_html + '</span>' : '';
 
       $.each(options.image, function(index, value) {
         data[index] = value;
@@ -64,7 +64,7 @@
         data[index] = value;
       });
     }
-    html = '<div class="imageeditor">' + editors_html + uploaders_html + '</div>';
+    html = '<span class="imageeditor">' + editors_html + uploaders_html + '</span>';
     data.callback = options.callback;
 
     var $imageeditor_div = $(html), method = options.method || 'after';

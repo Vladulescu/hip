@@ -5,7 +5,7 @@
 
   Drupal.imageeditor.editors.sumopaint = Drupal.imageeditor.editors.sumopaint || {};
   Drupal.imageeditor.editors.sumopaint.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.sumopaint').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.sumopaint').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();

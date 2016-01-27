@@ -5,7 +5,7 @@
 
   Drupal.imageeditor.editors.snipshot = Drupal.imageeditor.editors.snipshot || {};
   Drupal.imageeditor.editors.snipshot.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.snipshot').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.snipshot').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();

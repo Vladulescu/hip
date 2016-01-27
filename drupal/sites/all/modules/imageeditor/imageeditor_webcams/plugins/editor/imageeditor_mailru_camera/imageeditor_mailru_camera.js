@@ -5,7 +5,7 @@
 
   Drupal.imageeditor.editors.mailru_camera = Drupal.imageeditor.editors.mailru_camera || {};
   Drupal.imageeditor.editors.mailru_camera.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.imageeditor-mailru-camera').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.imageeditor-mailru-camera').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();

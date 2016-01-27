@@ -22,7 +22,7 @@ function imageeditor_settings_form() {
     '#default_value' => variable_get('imageeditor_overlay_type', 'custom'),
   );
 
-  foreach(array('editor', 'uploader') as $type) {
+  foreach (array('editor', 'uploader') as $type) {
     foreach (imageeditor_info($type) as $codename => $plugin) {
       if ($function = ctools_plugin_get_function($plugin, 'settings_form_callback')) {
         $form[$codename] = $function();

@@ -5,7 +5,7 @@
 
   Drupal.imageeditor.editors.imageeditor_scriptcam = Drupal.imageeditor.editors.imageeditor_scriptcam || {};
   Drupal.imageeditor.editors.imageeditor_scriptcam.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.imageeditor-scriptcam').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.imageeditor-scriptcam').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();

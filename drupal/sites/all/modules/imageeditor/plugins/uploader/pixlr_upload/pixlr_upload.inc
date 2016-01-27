@@ -9,7 +9,7 @@
  */
 $plugin = array(
   'name' => t('Pixlr Upload'),
-  'description' => t('Upload to http://pixlr.com service'),
+  'description' => 'CLOSED: ' . t('Upload to http://pixlr.com service'),
   'class' => 'pixlr-upload',
   'site' => 'http://pixlr.com/',
   'api_key' => FALSE,

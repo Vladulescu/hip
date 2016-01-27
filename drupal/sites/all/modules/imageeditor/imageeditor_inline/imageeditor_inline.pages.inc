@@ -130,6 +130,7 @@ function imageeditor_inline_save() {
         $alert .= 'Image file ownership has been changed to you.' . "\n";
       }
       file_save($file);
+      // TODO: update image dimensions in image fields - see file_entity module.
     }
   }
 
@@ -162,9 +163,9 @@ function imageeditor_inline_save_file_get_contents($url) {
 
 function imageeditor_inline_urltouri($url) {
   // Allow other modules to recognize url and provide uri.
-  foreach(module_invoke_all('imageeditor_inline_urltouri', $url) as $value) {
+  foreach (module_invoke_all('imageeditor_inline_urltouri', $url) as $value) {
     if ($value) {
-      return $value;
+      return rawurldecode($value);
     }
   }
 }

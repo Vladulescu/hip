@@ -115,15 +115,15 @@
  *
  * For a single database configuration, the following is sufficient:
  * @code
- * $databases['default']['default'] = array(
- *   'driver' => 'mysql',
- *   'database' => 'databasename',
- *   'username' => 'username',
- *   'password' => 'password',
- *   'host' => 'localhost',
- *   'prefix' => 'main_',
- *   'collation' => 'utf8_general_ci',
- * );
+  $databases['default']['default'] = array(
+    'driver' => 'mysql',
+    'database' => 'hip',
+    'username' => 'root',
+    'password' => '',
+    'host' => 'localhost',
+    'prefix' => 'main_',
+    'collation' => 'utf8_general_ci',
+  );
  * @endcode
  *
  * You can optionally set prefixes for some or all database table names

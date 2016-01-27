@@ -5,7 +5,7 @@
 
   Drupal.imageeditor.editors.flauntr_styler = Drupal.imageeditor.editors.flauntr_styler || {};
   Drupal.imageeditor.editors.flauntr_styler.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.flauntr-styler').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.flauntr-styler').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();

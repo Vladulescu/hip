@@ -5,7 +5,7 @@
 
   Drupal.imageeditor.editors.picmonkey = Drupal.imageeditor.editors.picmonkey || {};
   Drupal.imageeditor.editors.picmonkey.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.picmonkey').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.picmonkey').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();

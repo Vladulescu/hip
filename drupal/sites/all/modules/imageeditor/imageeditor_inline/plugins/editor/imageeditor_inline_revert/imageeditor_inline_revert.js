@@ -5,7 +5,7 @@
 
   Drupal.imageeditor.editors.imageeditor_inline_revert = Drupal.imageeditor.editors.imageeditor_inline_revert || {};
   Drupal.imageeditor.editors.imageeditor_inline_revert.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.imageeditor-inline-revert').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.imageeditor-inline-revert').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();
@@ -14,7 +14,7 @@
       Drupal.settings.imageeditor.save = data;
       var options = Drupal.settings.imageeditor[codename].options;
       if (typeof(data.url) !== 'undefined') {
-        options[Drupal.settings.imageeditor[codename].image_url_param] = data.url;
+        options[Drupal.settings.imageeditor[codename].image_url_param] = data.fullurl;
         Drupal.settings.imageeditor.save.create = 0;
         var filename = data.origurl.replace(new RegExp('.*/', 'g'), '');
         $.cookie('imageeditor_filename', filename, {expires: 7, path: Drupal.settings.basePath});

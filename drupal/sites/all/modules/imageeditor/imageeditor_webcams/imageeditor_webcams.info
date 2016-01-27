@@ -4,9 +4,9 @@ package = Image Editor
 core = 7.x
 dependencies[] = imageeditor
 
-; Information added by Drupal.org packaging script on 2014-03-02
-version = "7.x-1.11"
+; Information added by Drupal.org packaging script on 2015-09-29
+version = "7.x-1.12"
 core = "7.x"
 project = "imageeditor"
-datestamp = "1393742911"
+datestamp = "1443539041"
 

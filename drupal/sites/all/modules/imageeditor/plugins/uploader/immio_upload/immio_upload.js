@@ -5,7 +5,7 @@
 
   Drupal.imageeditor.uploaders.immio_upload = Drupal.imageeditor.uploaders.immio_upload || {};
   Drupal.imageeditor.uploaders.immio_upload.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.immio-upload').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.immio-upload').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();

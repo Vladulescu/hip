@@ -5,7 +5,7 @@
 
   Drupal.imageeditor.editors.imageeditor_webcam = Drupal.imageeditor.editors.imageeditor_webcam || {};
   Drupal.imageeditor.editors.imageeditor_webcam.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.imageeditor-webcam').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.imageeditor-webcam').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();

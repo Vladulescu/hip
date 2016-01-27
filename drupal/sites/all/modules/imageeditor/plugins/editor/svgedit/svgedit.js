@@ -5,7 +5,7 @@
 
   Drupal.imageeditor.editors.svgedit = Drupal.imageeditor.editors.svgedit || {};
   Drupal.imageeditor.editors.svgedit.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.svgedit').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.svgedit').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();

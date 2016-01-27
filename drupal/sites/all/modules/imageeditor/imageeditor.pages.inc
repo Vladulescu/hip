@@ -41,7 +41,7 @@ function imageeditor_upload($codename) {
 
   global $base_url;
   // TODO: need to fix this somehow... @see imageeditor_inline_url_to_uri().
-  $filepath = '@' . drupal_realpath(str_replace($base_url . '/', '', $_POST['url']));
+  $filepath = '@' . drupal_realpath(str_replace($base_url . '/', '', rawurldecode($_POST['url'])));
   $post = $filepath;
   if ($post_callback = ctools_plugin_get_function($plugin, 'post_callback')) {
     $post = $post_callback($filepath);

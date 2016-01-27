@@ -5,7 +5,7 @@
 
   Drupal.imageeditor.editors.pixlr_express = Drupal.imageeditor.editors.pixlr_express || {};
   Drupal.imageeditor.editors.pixlr_express.initialize = function($imageeditor_div) {
-    $imageeditor_div.find('div.pixlr-express').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
+    $imageeditor_div.find('.pixlr-express').not('.imageeditor-processed').addClass('imageeditor-processed').click(function(event) {
       event.preventDefault();
       event.stopPropagation();
       var data = $imageeditor_div.data();
